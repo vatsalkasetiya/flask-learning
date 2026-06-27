@@ -1,0 +1,9 @@
+{% with msg=get_flashed_messages() %}
+
+{% for i in msg %}
+
+<p>{{i}}</p>
+
+{% endfor %}
+
+{% endwith %}

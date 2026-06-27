@@ -210,21 +210,22 @@
 
 # app.run(debug=True)
 
-from flask import Flask
-from flask import render_template
+# from flask import Flask,request
+# from flask import render_template
 
 
-app=Flask(__name__)
+# app=Flask(__name__)
 
 
-@app.route("/")
 
-def user():
+# @app.route("/login",methods=["GET","POST"])
 
-    return render_template(
-        "age.html",
-        age=21
-    )
+# if request.method=="POST":
+#     def user():
+#         return render_template(
+#          "age.html",
+#             age=21
+#         )
 
 
-app.run(debug=True)
+# app.run(debug=True)

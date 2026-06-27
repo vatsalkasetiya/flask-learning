@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>Name: {{name}}</h1>
+
+<h1>Age: {{age}}</h1>
+
+{% if age >= 18 %}
+
+<p>Adult</p>
+
+{% else %}
+
+<p>Child</p>
+
+{% endif %}
+
+</body>
+
+</html>
